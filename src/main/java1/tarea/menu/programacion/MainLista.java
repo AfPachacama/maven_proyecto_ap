@@ -12,13 +12,23 @@ public class MainLista {
 		 String numero;
 		 
 		 while(true) {
+			 
+			 System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
+			 System.out.println("Sistema SIUU");
+			 System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
+
+
+			 
 			 System.out.println("1.Ingresar Estudiante");
 			 System.out.println("2. Mostrar Datos");
 			 System.out.println("3. Buscar");
+			 System.out.println("4. Salir");
+			 
 			 System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
 
 			 System.out.println("Seleccione su opcion: ");
 			 opcion = leer.nextInt();
+			 
 			 switch(opcion) {
 			 case 1:{
 				 
@@ -39,7 +49,9 @@ public class MainLista {
 				 if(lista==null) {
 					 System.out.println("No Hay Datos Registrados");
 				 }else {
+					
 					 System.out.println(" Los Datos Registrados son: ");
+					 System.out.println("");
 					 Esctructura aux = lista;
 					 while(aux != null) {
 					 System.out.println(""+ aux.numero);
@@ -60,7 +72,7 @@ public class MainLista {
 				 else {
 				
 					 String buscar;
-					 System.out.println("Ingrese Nombres");
+					 System.out.println("Ingrese Nombres_:");
 					 buscar = leer.nextLine();
 					 Esctructura aux = lista;
 					 while(aux != null) {
@@ -83,13 +95,21 @@ public class MainLista {
 				 
 					 
 			 }
+			 case 4:
+				 System.out.println("-.-.-.-.-Gracias por usar nuestro sistema-.-.-.-.- ");
+				 System.exit(0);
 				 
+
+				 break;
 		
 			 
 
 			 
 		 }
-		
+			 
+//			 while (opcion!= 4);
+//			 System.out.println("Gracias por usar nuestro sistema ");
+
 
 	}
 
