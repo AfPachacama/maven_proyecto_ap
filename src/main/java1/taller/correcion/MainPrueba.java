@@ -29,7 +29,7 @@ public class MainPrueba {
 			System.out.println("3. Salir");
 			opcionMenu = lector.nextLine();
 				
-			}if (opcionMenu.equals("1")) {	
+			if (opcionMenu.equals("1")) {	
 			System.out.println("No tiene ningun pago pendiente");
 
 			claveIngresada = "0";
@@ -55,8 +55,9 @@ public class MainPrueba {
 		System.out.println("La clave no es la correcta");
 	}
 	
-	} while(!claveIngresada.equals("-1"));
-	System.out.println("Gracias por preferirnos");System.out.println(variable);
+	 while(!claveIngresada.equals("-1"));
+	System.out.println("Gracias por preferirnos");
+//	System.out.println(variable);
 
 }
 }
