@@ -4,8 +4,13 @@ import java.time.LocalDate;
 
 public class CursoVacacional{
 	
-	
 	private String nombre;
+	private LocalDate FechaInicio;
+	private LocalDate FechaFin;
+	private Instructor instructor;
+	
+	
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -24,8 +29,7 @@ public class CursoVacacional{
 	public void setFechaFin(LocalDate fechaFin) {
 		FechaFin = fechaFin;
 	}
-	private LocalDate FechaInicio;
-	private LocalDate FechaFin;
+	
 	
 	
 	
